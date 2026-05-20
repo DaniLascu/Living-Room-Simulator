@@ -141,8 +141,8 @@ Aplicatia foloseste **2 shadere**: un **vertex shader** si un **fragment shader*
 
 - **Vertex shader** - aplica transformarile (`worldViewProjection`) asupra
   pozitiilor, transforma normalele cu `worldInverseTranspose` si calculeaza, pentru
-  fiecare vertex, vectorii *surface -> light* si *surface -> view* care se
-  interpoleaza spre fragment shader.
+  fiecare vertex, vectorii *surface -> light* si *surface -> view* care sunt
+  trimisi spre fragment shader.
 
 - **Fragment shader** - implementeaza modelul de iluminare **Phong** cu trei
   componente: **ambient**, **diffuse** si **specular**.
