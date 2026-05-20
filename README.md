@@ -98,9 +98,7 @@ node server.js
 Apoi deschide **http://localhost:3000** in browser.
 
 Serverul Express serveste static fisierele proiectului. Este necesar pentru ca
-`fetch` sa poata incarca modelele `.obj`, texturile, videoclipul si patch-urile Pd
-(deschiderea directa a `index.html` de pe disc nu functioneaza din cauza
-restrictiilor CORS / `file://`).
+`fetch` sa poata incarca modelele `.obj`, texturile, videoclipul si patch-urile Pd.
 
 ## Structura proiectului
 
