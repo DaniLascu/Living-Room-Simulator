@@ -267,6 +267,17 @@ Sunt folosite **trei patch-uri** (in `Sound_Patches/`):
 - `radio_static.pd` - zgomotul "static" al radioului;
 - `tv_music.pd` - sunetul televizorului.
 
+**Fisiere PD:**
+
+#### `radio_music.pd`
+![radio_music](Sound_Patches/radio_music.png)
+
+#### `radio_static.pd`
+![radio_static](Sound_Patches/radio_static.png)
+
+#### `tv_music.pd`
+![tv_music](Sound_Patches/tv_music.png)
+
 **Pornirea motorului audio.** La primul click pe un buton ON se apeleaza
 `startPd()`, care executa `Pd.start()` (motorul audio poate porni doar dupa o
 interactiune a utilizatorului) si apoi incarca fiecare patch cu
@@ -304,3 +315,9 @@ semnalul". Televizorul are o simpla atenuare cu distanta.
 Panoul UI (`#audioPanel`) afiseaza in timp real, prin bare de progres, nivelurile
 calculate pentru **Music**, **Static** si **TV Sound**, reflectand valorile trimise
 catre Pd.
+
+---
+
+## Demo video
+
+<video src="demo.mp4" controls width="100%"></video>

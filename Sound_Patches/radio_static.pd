@@ -1,0 +1,29 @@
+#N canvas 0 0 400 500 12;
+
+#X obj 60 20 noise~;
+#X obj 60 60 lop~ 2000;
+#X obj 60 120 r dist_norm;
+#X obj 60 160 line~ 30;
+#X obj 200 120 r radio_on;
+#X obj 200 160 sig~;
+#X obj 60 220 *~;
+#X obj 60 270 *~;
+#X obj 60 320 *~ 0.5;
+#X obj 200 320 r master_vol;
+#X obj 200 360 sig~;
+#X obj 60 370 *~;
+#X obj 60 430 dac~ 1 2;
+
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 1;
+#X connect 7 0 8 0;
+#X connect 8 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 1;
+#X connect 11 0 12 0;
+#X connect 11 0 12 1;
