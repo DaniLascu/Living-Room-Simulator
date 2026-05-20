@@ -258,9 +258,6 @@ La final, starile GL sunt resetate la valorile implicite.
 
 ### Sunetul (Pure Data / WebPd)
 
-> Partea de audio a fost implementata de colegul de echipa. Mai jos este o descriere
-> a modului in care functioneaza la nivel de integrare cu aplicatia WebGL.
-
 Sunetul este generat de **patch-uri Pure Data (Pd)** rulate direct in browser cu
 ajutorul bibliotecii **WebPd** (`lib/webpd.min.js`). WebPd interpreteaza fisierele
 `.pd` si le ruleaza peste **Web Audio API**, fara a fi nevoie de Pd-ul desktop.
