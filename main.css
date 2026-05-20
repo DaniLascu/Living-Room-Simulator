@@ -1,0 +1,122 @@
+@import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css");
+body {
+  margin: 0;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#audioPanel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(20, 20, 20, 0.85);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 12px;
+  min-width: 220px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  z-index: 10;
+}
+
+.panel-section {
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px;
+}
+.panel-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.radio-title { color: #4caf50; }
+.tv-title { color: #5c9ce0; }
+
+.section-controls {
+  display: flex;
+  gap: 6px;
+}
+.section-controls button {
+  flex: 1;
+  padding: 4px 8px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}
+.section-controls button.active {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+.section-controls button:hover {
+  background: #444;
+}
+.section-controls button.active:hover {
+  background: #5cbf60;
+}
+#tvOn.active, #tvOff.active {
+  background: #5c9ce0;
+  border-color: #5c9ce0;
+}
+#tvOn.active:hover, #tvOff.active:hover {
+  background: #6cace0;
+}
+
+.master-volume {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.master-volume label {
+  font-size: 11px;
+}
+.master-volume input[type="range"] {
+  width: 100%;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+.bar-label {
+  width: 36px;
+  font-size: 11px;
+  text-align: right;
+}
+.bar-track {
+  flex: 1;
+  height: 10px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.1s;
+}
+.music-fill { background: #4caf50; }
+.static-fill { background: #ff9800; }
+.tv-fill { background: #5c9ce0; }
+.bar-value {
+  width: 30px;
+  font-size: 10px;
+  text-align: left;
+}
