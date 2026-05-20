@@ -80,9 +80,9 @@ Modelele 3D si texturile sunt reutilizate dintr-un proiect OpenGL / C++ anterior
 | Butoane **TV ON/OFF** | Porneste / opreste sunetul televizorului |
 | Slider **Master Volume** | Regleaza volumul general |
 
-> Nota: din cauza politicilor browserelor, audio-ul porneste doar dupa o
+> Nota: din cauza permisiunilor browserelor, audio-ul porneste doar dupa o
 > interactiune a utilizatorului (primul click pe ON). La fel, videoclipul de pe TV
-> porneste automat, iar daca browserul blocheaza autoplay, demareaza la primul
+> porneste automat, iar daca browserul blocheaza autoplay, porneste la primul
 > click sau la prima tasta apasata.
 
 ## Rulare
