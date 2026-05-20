@@ -315,9 +315,3 @@ semnalul". Televizorul are o simpla atenuare cu distanta.
 Panoul UI (`#audioPanel`) afiseaza in timp real, prin bare de progres, nivelurile
 calculate pentru **Music**, **Static** si **TV Sound**, reflectand valorile trimise
 catre Pd.
-
----
-
-## Demo video
-
-<video src="demo.mp4" controls width="100%"></video>
